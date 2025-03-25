@@ -1,0 +1,35 @@
+# Root Cause Analysis Configuration
+
+# Data paths
+data:
+  structured_dir: "../data/structured"
+  unstructured_dir: "../data/unstructured"
+  processed_dir: "../data/processed"
+  knowledge_graph_dir: "../data/knowledge_graph"
+
+# Knowledge Graph settings
+knowledge_graph:
+  visualize: true
+  default_format: "json"
+  visualization_format: "png"
+  graph_type: "directed"  # directed or undirected
+  
+# Analysis settings
+analysis:
+  correlation_threshold: 0.7
+  min_confidence: 0.6
+  max_root_causes: 5
+
+# Azure settings
+azure:
+  openai:
+    deployment_name: "text-embedding-ada-002"
+    api_version: "2023-05-15"
+    max_tokens: 8192
+  
+  cognitive_search:
+    index_name: "root-cause-analysis"
+    semantic_config_name: "default"
+    
+  document_intelligence:
+    api_version: "2023-07-31"
