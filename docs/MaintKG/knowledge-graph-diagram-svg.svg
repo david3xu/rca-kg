@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <!-- Background -->
+  <rect width="900" height="600" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Knowledge Graph Implementation for Root Cause Analysis</text>
+  
+  <!-- Main Architectural Components -->
+  <!-- Data Acquisition Layer -->
+  <rect x="50" y="80" width="180" height="120" fill="#e1f5fe" stroke="#01579b" stroke-width="2" rx="5"/>
+  <text x="140" y="100" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Data Acquisition Layer</text>
+  <rect x="70" y="110" width="140" height="25" fill="#fff3e0" stroke="#e65100" stroke-width="1" rx="3"/>
+  <text x="140" y="128" font-family="Arial" font-size="12" text-anchor="middle">CMMS</text>
+  <rect x="70" y="145" width="140" height="25" fill="#fff3e0" stroke="#e65100" stroke-width="1" rx="3"/>
+  <text x="140" y="163" font-family="Arial" font-size="12" text-anchor="middle">Sensors</text>
+  <rect x="70" y="180" width="140" height="25" fill="#fff3e0" stroke="#e65100" stroke-width="1" rx="3"/>
+  <text x="140" y="198" font-family="Arial" font-size="12" text-anchor="middle">Documents</text>
+  
+  <!-- Knowledge Extraction Pipeline -->
+  <rect x="280" y="80" width="180" height="120" fill="#e1f5fe" stroke="#01579b" stroke-width="2" rx="5"/>
+  <text x="370" y="100" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Knowledge Extraction</text>
+  <rect x="300" y="110" width="140" height="25" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="370" y="128" font-family="Arial" font-size="12" text-anchor="middle">ETL Pipeline</text>
+  <rect x="300" y="145" width="140" height="25" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="370" y="163" font-family="Arial" font-size="12" text-anchor="middle">NLP/ML Transformers</text>
+  <rect x="300" y="180" width="140" height="25" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="370" y="198" font-family="Arial" font-size="12" text-anchor="middle">Entity Extraction</text>
+  
+  <!-- Knowledge Graph Database -->
+  <rect x="510" y="80" width="180" height="120" fill="#e1f5fe" stroke="#01579b" stroke-width="2" rx="5"/>
+  <text x="600" y="100" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Knowledge Graph DB</text>
+  <rect x="530" y="110" width="140" height="25" fill="#fff3e0" stroke="#e65100" stroke-width="1" rx="3"/>
+  <text x="600" y="128" font-family="Arial" font-size="12" text-anchor="middle">Triple Storage</text>
+  <rect x="530" y="145" width="140" height="25" fill="#fff3e0" stroke="#e65100" stroke-width="1" rx="3"/>
+  <text x="600" y="163" font-family="Arial" font-size="12" text-anchor="middle">Graph Indexes</text>
+  <rect x="530" y="180" width="140" height="25" fill="#fff3e0" stroke="#e65100" stroke-width="1" rx="3"/>
+  <text x="600" y="198" font-family="Arial" font-size="12" text-anchor="middle">Statistical Metrics</text>
+  
+  <!-- Inference Engine -->
+  <rect x="740" y="80" width="120" height="120" fill="#e1f5fe" stroke="#01579b" stroke-width="2" rx="5"/>
+  <text x="800" y="100" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Inference Engine</text>
+  <rect x="760" y="110" width="80" height="25" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="800" y="128" font-family="Arial" font-size="12" text-anchor="middle">Rules</text>
+  <rect x="760" y="145" width="80" height="25" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="800" y="163" font-family="Arial" font-size="12" text-anchor="middle">ML</text>
+  <rect x="760" y="180" width="80" height="25" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="800" y="198" font-family="Arial" font-size="12" text-anchor="middle">Patterns</text>
+  
+  <!-- Domain Ontology -->
+  <rect x="50" y="240" width="350" height="100" fill="#f9f9f9" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="225" y="260" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Domain Ontology</text>
+  
+  <!-- Entity Types -->
+  <rect x="70" y="270" width="140" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="1" rx="3"/>
+  <text x="140" y="290" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Entity Types</text>
+  <text x="140" y="310" font-family="Arial" font-size="10" text-anchor="middle">Components, States</text>
+  <text x="140" y="325" font-family="Arial" font-size="10" text-anchor="middle">Activities, Factors</text>
+  
+  <!-- Relationship Types -->
+  <rect x="240" y="270" width="140" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="1" rx="3"/>
+  <text x="310" y="290" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Relationship Types</text>
+  <text x="310" y="310" font-family="Arial" font-size="10" text-anchor="middle">Causality, Sequence</text>
+  <text x="310" y="325" font-family="Arial" font-size="10" text-anchor="middle">Physical, Functional</text>
+  
+  <!-- Knowledge Representation -->
+  <rect x="450" y="240" width="400" height="100" fill="#f9f9f9" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="650" y="260" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Knowledge Representation</text>
+  
+  <!-- Triple Structure -->
+  <rect x="470" y="270" width="200" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="1" rx="3"/>
+  <text x="570" y="290" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Triple Structure</text>
+  <text x="570" y="310" font-family="Arial" font-size="10" text-anchor="middle">(Entity1, Relationship, Entity2)</text>
+  <text x="570" y="325" font-family="Arial" font-size="10" text-anchor="middle">e.g., (Bearing, experiences, Vibration)</text>
+  
+  <!-- PMI Metrics -->
+  <rect x="690" y="270" width="140" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="1" rx="3"/>
+  <text x="760" y="290" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">PMI Metrics</text>
+  <text x="760" y="310" font-family="Arial" font-size="10" text-anchor="middle">Statistical Significance</text>
+  <text x="760" y="325" font-family="Arial" font-size="10" text-anchor="middle">Causality Strength</text>
+  
+  <!-- Query Interface -->
+  <rect x="50" y="380" width="800" height="80" fill="#e1f5fe" stroke="#01579b" stroke-width="2" rx="5"/>
+  <text x="450" y="400" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Query Interface</text>
+  <rect x="100" y="420" width="120" height="30" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="160" y="440" font-family="Arial" font-size="12" text-anchor="middle">Cypher Queries</text>
+  <rect x="250" y="420" width="120" height="30" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="310" y="440" font-family="Arial" font-size="12" text-anchor="middle">Visualization</text>
+  <rect x="400" y="420" width="120" height="30" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="460" y="440" font-family="Arial" font-size="12" text-anchor="middle">Multi-dim Traversal</text>
+  <rect x="550" y="420" width="120" height="30" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="610" y="440" font-family="Arial" font-size="12" text-anchor="middle">Pattern Recognition</text>
+  <rect x="700" y="420" width="120" height="30" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="760" y="440" font-family="Arial" font-size="12" text-anchor="middle">Analytics Dashboard</text>
+  
+  <!-- Root Cause Analysis Workflow -->
+  <rect x="50" y="500" width="800" height="80" fill="#e1f5fe" stroke="#01579b" stroke-width="2" rx="5"/>
+  <text x="450" y="520" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Root Cause Analysis Workflow</text>
+  <rect x="70" y="540" width="130" height="30" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="135" y="560" font-family="Arial" font-size="12" text-anchor="middle">Symptom ID</text>
+  <rect x="210" y="540" width="130" height="30" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="275" y="560" font-family="Arial" font-size="12" text-anchor="middle">Temporal Analysis</text>
+  <rect x="350" y="540" width="130" height="30" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="415" y="560" font-family="Arial" font-size="12" text-anchor="middle">Precursor Detection</text>
+  <rect x="490" y="540" width="130" height="30" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="555" y="560" font-family="Arial" font-size="12" text-anchor="middle">Causal Chain Analysis</text>
+  <rect x="630" y="540" width="150" height="30" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="3"/>
+  <text x="705" y="560" font-family="Arial" font-size="12" text-anchor="middle">Intervention Validation</text>
+  
+  <!-- Connection Arrows -->
+  <!-- Data Flow Arrows -->
+  <!-- Data Acquisition to Knowledge Extraction -->
+  <line x1="230" y1="140" x2="280" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Knowledge Extraction to Knowledge Graph DB -->
+  <line x1="460" y1="140" x2="510" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Knowledge Graph DB to Inference Engine -->
+  <line x1="690" y1="140" x2="740" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Domain Ontology to Knowledge Extraction -->
+  <line x1="225" y1="240" x2="225" y2="210" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Knowledge Representation to Knowledge Graph DB -->
+  <line x1="650" y1="240" x2="650" y2="210" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Knowledge Graph DB to Query Interface -->
+  <line x1="600" y1="200" x2="600" y2="380" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Inference Engine to Query Interface -->
+  <line x1="800" y1="200" x2="800" y2="380" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Query Interface to Root Cause Analysis -->
+  <line x1="450" y1="460" x2="450" y2="500" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

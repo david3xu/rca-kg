@@ -1,0 +1,105 @@
+flowchart TD
+    %% Main Components
+    subgraph KG["Knowledge Graph Implementation for Root Cause Analysis"]
+        %% Core Components
+        subgraph DL["Data Acquisition Layer"]
+            CMMS["CMMS"]
+            Sensors["Sensors"]
+            Documents["Documents"]
+        end
+
+        subgraph KE["Knowledge Extraction Pipeline"]
+            ETL["ETL Pipeline"]
+            NLP["NLP/ML Transformers"]
+            IE["Entity & Relation Extraction"]
+            ER["Entity Resolution"]
+        end
+
+        subgraph KGB["Knowledge Graph Database"]
+            Triple["Triple Storage"]
+            Index["Graph Indexes"]
+            Stats["Statistical Metrics"]
+        end
+
+        subgraph IE["Inference Engine"]
+            Rules["Logical Rules"]
+            ML["Machine Learning"]
+            TP["Temporal Patterns"]
+        end
+
+        subgraph QI["Query Interface"]
+            Query["Cypher/SPARQL Queries"]
+            Vis["Visualization"]
+            Dashboard["Analytics Dashboard"]
+        end
+    end
+
+    %% Domain Ontology
+    subgraph DO["Domain Ontology"]
+        ET["Entity Types"]
+        RT["Relationship Types"]
+    end
+
+    %% Root Cause Analysis Patterns
+    subgraph RCA["Root Cause Analysis Patterns"]
+        PD["Physical Dimension"]
+        CD["Causal Dimension"]
+        TD["Temporal Dimension"]
+        SD["Statistical Dimension"]
+    end
+
+    %% Knowledge Representation
+    subgraph KR["Knowledge Representation"]
+        TS["Triple Structure"]
+        subgraph TS
+            E1["Entity1/Subject"]
+            R["Relationship/Predicate"]
+            E2["Entity2/Object"]
+        end
+        
+        PMI["PMI Metrics"]
+    end
+
+    %% Data Flow
+    DL --> ETL
+    ETL --> NLP
+    NLP --> IE
+    IE --> ER
+    ER --> Triple
+    DO --> KE
+    
+    Triple --> Index
+    Triple --> Stats
+    
+    KGB --> Rules
+    KGB --> ML
+    KGB --> TP
+    
+    IE --> Query
+    Query --> Vis
+    Query --> Dashboard
+    
+    KGB --> RCA
+    RCA --> QI
+
+    %% Analysis Process
+    subgraph AP["Analysis Process"]
+        SI["Symptom Identification"]
+        TPA["Temporal Pattern Analysis"]
+        PI["Precursor Identification"]
+        CCA["Causal Chain Analysis"]
+        IV["Intervention Validation"]
+    end
+    
+    QI --> AP
+    
+    %% Styling
+    classDef system fill:#f9f9f9,stroke:#333,stroke-width:1px;
+    classDef component fill:#e1f5fe,stroke:#01579b,stroke-width:1px;
+    classDef process fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px;
+    classDef data fill:#fff3e0,stroke:#e65100,stroke-width:1px;
+    
+    class KG,DO,RCA system;
+    class DL,KE,KGB,IE,QI,AP component;
+    class ETL,NLP,IE,ER,Rules,ML,TP,Query,Vis,Dashboard process;
+    class CMMS,Sensors,Documents,Triple,Index,Stats,TS,PMI,E1,R,E2 data;
