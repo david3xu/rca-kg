@@ -27,9 +27,42 @@
 ### Knowledge Graph Evolution Timeline
 
 ```
-1960s         1980s           2000s           2012           Present
-[Semantic] → [Expert] → [Semantic Web] → [Google KG] → [Enterprise KGs]
-Networks     Systems      & Linked Data    Launch       & AI Integration
++-------------------+     +---------------------+     +--------------------------------+
+| 1960s-1980s       |     | 1990s-2012          |     | 2013-Present                   |
+| Early Knowledge   |     | Semantic Web &      |     | Modern Knowledge Graph Era     |
+| Representation    |     | First KGs           |     |                                |
+|                   |     |                     |     | Enterprise Implementation      |
+| Semantic Networks |     | RDF, OWL, Linked    |     | AI Integration & Applications  |
+| Frames, Scripts   |     | Data, Google KG     |     |                                |
+| Expert Systems    |     | Launch (2012)       |     |                                |
++-------------------+     +---------------------+     +--------------------------------+
+                                                                    |
+                                                                    v
+                                                      +--------------------------------+
+                                                      | 2013-2016: Foundation Phase    |
+                                                      | • Enterprise adoption begins   |
+                                                      | • Graph database maturation    |
+                                                      | • Industry-specific ontologies |
+                                                      +--------------------------------+
+                                                                    |
+                                                                    v
+                                                      +--------------------------------+
+                                                      | 2017-2019: Integration Phase   |
+                                                      | • ML + KG hybrid systems       |
+                                                      | • Knowledge graph embeddings   |
+                                                      | • First RCA implementations    |
+                                                      | • Distributed KG architectures |
+                                                      +--------------------------------+
+                                                                    |
+                                                                    v
+                                                      +--------------------------------+
+                                                      | 2020-Present: Advanced Phase   |
+                                                      | • Neural-symbolic integration  |
+                                                      | • Causal reasoning frameworks  |
+                                                      | • Temporal knowledge graphs    |
+                                                      | • Automated KG construction    |
+                                                      | • Multi-modal knowledge graphs |
+                                                      +--------------------------------+
 ```
 
 > Citation: Hogan et al. (2021), "Knowledge graphs represent real-world entities and illustrate relationships between them through nodes, edges, and labels"
